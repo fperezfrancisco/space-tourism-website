@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="techPage">
+    <header class="topBar flex">
+      <span class="logoBox flex">
+        <img src="./assets/shared/logo.svg" alt="space logo" class="logoImg" />
+      </span>
+      <nav class="mainNav flex">
+        <ul class="navList navText flex">
+          <li class="navLi">
+            <a href="index.html" class="navLink hoverUnderline"
+              ><span class="navNumber">00</span>Home</a
+            >
+          </li>
+          <li class="navLi">
+            <a href="destination-moon.html" class="navLink hoverUnderline"
+              ><span class="navNumber">01</span>Destination</a
+            >
+          </li>
+          <li class="navLi">
+            <a href="crew-commander.html" class="navLink hoverUnderline"
+              ><span class="navNumber">02</span>Crew</a
+            >
+          </li>
+          <li class="navLi">
+            <a
+              href="technology-vehicle.html"
+              class="navLink hoverUnderline hoverUnderlineActive"
+              ><span class="navNumber">03</span>Technology</a
+            >
+          </li>
+        </ul>
+        <span class="mobileOpen">
+          <img
+            src="./assets/shared/icon-hamburger.svg"
+            alt="open menu"
+            class="mobileMenu menuOpen"
+            id="mobileMenuOpen"
+          />
+        </span>
+        <div class="mobileNav">
+          <img
+            src="./assets/shared/icon-close.svg"
+            alt="Close"
+            class="mobileCloseBtn"
+          />
+          <ul class="navList flex mobileNavList">
+            <li class="navLi Li" id="homeLiMobile">
+              <a href="index.html" class="navLink navText">
+                <span class="boldNumber">00</span>Home
+              </a>
+            </li>
+            <li class="navLi companyLi" id="destinationLiMobile">
+              <a href="destination-moon.html" class="navLink navText"
+                ><span class="boldNumber">01</span>Destination
+              </a>
+            </li>
+            <li class="navLi crewLi">
+              <a href="crew-commander.html" class="navLink navText"
+                ><span class="boldNumber">02</span>Crew</a
+              >
+            </li>
+            <li class="navLi technologyLi">
+              <a href="technology-vehicle.html" class="navLink navText"
+                ><span class="boldNumber">03</span>Technology</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="techMainContainer">
+      <div class="grid innerContainer techInnerContainer">
+        <div class="titleGridBox flex">
+          <h2 class="heading5">
+            <span class="darkNumber">03</span>space launch 101
+          </h2>
+        </div>
+        <div class="artGridBox techArtGridBox flex">
+          <picture>
+            <source
+              media="(max-width: 899px)"
+              srcset="./assets/technology/image-spaceport-landscape.jpg"
+            />
+            <source
+              media="(min-width: 900px)"
+              srcset="./assets/technology/image-spaceport-portrait.jpg"
+            />
+            <img
+              class="techImg"
+              src="./assets/technology/image-spaceport-portrait.jpg"
+              alt="Spaceport"
+            />
+          </picture>
+        </div>
+        <div class="copyGridBox flex">
+          <ul role="navigation" class="techInnerNav flex">
+            <li class="techLi">
+              <a href="technology-vehicle.html" class="techLink">1</a>
+            </li>
+            <li class="techLi">
+              <a
+                href="technology-spaceport.html"
+                class="techLink activeTechLink"
+                >2</a
+              >
+            </li>
+            <li class="techLi">
+              <a href="technology-capsule.html" class="techLink">3</a>
+            </li>
+          </ul>
+          <h2 class="mainSubtitle heading5">The terminology...</h2>
+          <h1 class="mainTitle heading3">Spaceport</h1>
+          <p class="sectionPara">
+            A spaceport or cosmodrome is a site for launching (or receiving)
+            spacecraft, by analogy to the seaport for ships or airport for
+            aircraft. Based in the famous Cape Canaveral, our spaceport is
+            ideally situated to take advantage of the Earth’s rotation for
+            launch.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

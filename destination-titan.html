@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="destinationPage">
+    <header class="topBar flex">
+      <span class="logoBox flex">
+        <img src="./assets/shared/logo.svg" alt="space logo" class="logoImg" />
+      </span>
+      <nav class="mainNav flex">
+        <ul class="navList navText flex">
+          <li class="navLi">
+            <a href="index.html" class="navLink hoverUnderline"
+              ><span class="navNumber">00</span>Home</a
+            >
+          </li>
+          <li class="navLi">
+            <a
+              href="destination-moon.html"
+              class="navLink hoverUnderline hoverUnderlineActive"
+              ><span class="navNumber">01</span>Destination</a
+            >
+          </li>
+          <li class="navLi">
+            <a href="crew-commander.html" class="navLink hoverUnderline"
+              ><span class="navNumber">02</span>Crew</a
+            >
+          </li>
+          <li class="navLi">
+            <a href="technology-vehicle.html" class="navLink hoverUnderline"
+              ><span class="navNumber">03</span>Technology</a
+            >
+          </li>
+        </ul>
+        <span class="mobileOpen">
+          <img
+            src="./assets/shared/icon-hamburger.svg"
+            alt="open menu"
+            class="mobileMenu menuOpen"
+            id="mobileMenuOpen"
+          />
+        </span>
+        <div class="mobileNav">
+          <img
+            src="./assets/shared/icon-close.svg"
+            alt="Close"
+            class="mobileCloseBtn"
+          />
+          <ul class="navList flex mobileNavList">
+            <li class="navLi Li" id="homeLiMobile">
+              <a href="index.html" class="navLink navText hoverUnderline">
+                <span class="boldNumber">00</span>Home
+              </a>
+            </li>
+            <li class="navLi companyLi" id="destinationLiMobile">
+              <a
+                href="destination-moon.html"
+                class="navLink navText hoverUnderline"
+                ><span class="boldNumber">01</span>Destination
+              </a>
+            </li>
+            <li class="navLi crewLi">
+              <a
+                href="crew-commander.html"
+                class="navLink navText hoverUnderline"
+                ><span class="boldNumber">02</span>Crew</a
+              >
+            </li>
+            <li class="navLi technologyLi">
+              <a
+                href="technology-vehicle.html"
+                class="navLink navText hoverUnderline"
+                ><span class="boldNumber">03</span>Technology</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="destiMainContainer">
+      <div class="grid innerContainer destiInnerContainer">
+        <div class="titleGridBox flex">
+          <h2 class="heading5">
+            <span class="darkNumber">01</span>Pick your destination
+          </h2>
+        </div>
+        <div class="artGridBox flex">
+          <img src="./assets/destination/image-titan.png" alt="Titan" />
+        </div>
+        <div class="copyGridBox flex">
+          <ul role="navigation" class="destinationInnerNav flex">
+            <li class="destiLi navLi">
+              <a
+                href="destination-moon.html"
+                class="destiNavLink navText hoverUnderline"
+                >Moon</a
+              >
+            </li>
+            <li class="destiLi navLi">
+              <a
+                href="destination-mars.html"
+                class="destiNavLink navText hoverUnderline"
+                >Mars</a
+              >
+            </li>
+            <li class="destiLi navLi">
+              <a
+                href="destination-europa.html"
+                class="destiNavLink navText hoverUnderline"
+                >Europa</a
+              >
+            </li>
+            <li class="destiLi navLi">
+              <a
+                href="destination-titan.html"
+                class="destiNavLink navText hoverUnderline hoverUnderlineActive"
+                >Titan</a
+              >
+            </li>
+          </ul>
+          <h1 class="mainTitle heading2">Titan</h1>
+          <p class="sectionPara">
+            The only moon known to have a dense atmosphere other than Earth,
+            Titan is a home away from home (just a few hundred degrees colder!).
+            As a bonus, you get striking views of the Rings of Saturn.
+          </p>
+          <div class="destiStatsContainer flex">
+            <div class="destiStatBox flex">
+              <h3 class="subheading2">Avg. distance</h3>
+              <h4 class="subheading1">1.6 bil. km</h4>
+            </div>
+            <div class="destiStatBox flex">
+              <h3 class="subheading2">Est. travel time</h3>
+              <h4 class="subheading1">7 years</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
